@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Elinaldo Costa - Programador Front-End">
+    <title>Elinaldo Costa | Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="topo">
+        <nav class="navegacao" aria-label="Navegação principal">
+            <a class="logo" href="#inicio">EC</a>
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="cabecalho">
+            <div class="hero-conteudo">
+                <div class="foto-container">
+                    <img src="img/elinaldo.svg" alt="Foto de Elinaldo Costa" class="foto-perfil"
+                         onerror="this.style.display='none'; document.querySelector('.foto-fallback').style.display='grid';">
+                    <div class="foto-fallback" aria-hidden="true">EC</div>
+                </div>
+                <p class="eyebrow">PORTFÓLIO FRONT-END</p>
+                <h1>Elinaldo <span>Costa</span></h1>
+                <p class="subtitulo">Programador Front-End</p>
+                <p class="descricao-hero">Criando interfaces modernas, funcionais e acessíveis para a web.</p>
+                <div class="botoes">
+                    <a class="botao primario" href="#projetos">Ver projetos</a>
+                    <a class="botao secundario" href="#contato">Entrar em contato</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre secao">
+            <div class="container">
+                <p class="tag">SOBRE MIM</p>
+                <h2>Desenvolvimento com foco em <span>performance</span></h2>
+                <div class="sobre-grid">
+                    <div class="sobre-caixa">
+                        <p>
+                            Sou um programador de front-end focado em performance,
+                            garantindo que o site seja rápido e acessível.
+                        </p>
+                        <p>
+                            Este portfólio foi desenvolvido como projeto acadêmico,
+                            utilizando HTML, CSS e JavaScript para praticar estrutura,
+                            estilização e interatividade em aplicações web.
+                        </p>
+                    </div>
+                    <div class="tecnologias">
+                        <div class="tecnologia"><strong>HTML5</strong><span>Estrutura semântica</span></div>
+                        <div class="tecnologia"><strong>CSS3</strong><span>Layout e responsividade</span></div>
+                        <div class="tecnologia"><strong>JavaScript</strong><span>Interatividade</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="projetos secao">
+            <div class="container">
+                <p class="tag">MEUS PROJETOS</p>
+                <h2>Projetos em destaque</h2>
+                <div class="projetos-caixa">
+                    <article class="projetos-card">
+                        <div class="projeto-imagem-wrap">
+                            <img src="img/projeto1.svg" alt="Projeto loja de carros" class="projetos-imagem"
+                                 onerror="this.style.display='none'; document.querySelector('.projeto-fallback').style.display='flex';">
+                            <div class="projeto-fallback" aria-hidden="true">LOJA DE CARROS</div>
+                        </div>
+                        <div class="projeto-conteudo">
+                            <span class="numero">01</span>
+                            <h3>Loja de Carros</h3>
+                            <p>Loja virtual moderna com animações suaves e apresentação de veículos.</p>
+                            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contatos secao">
+            <div class="container contato-grid">
+                <div>
+                    <p class="tag">CONTATO</p>
+                    <h2>Vamos conversar?</h2>
+                    <p class="contato-texto">Envie uma mensagem pelo formulário e fale comigo sobre seu projeto.</p>
+                </div>
+                <form class="formulario-contato" id="formulario">
+                    <label for="nome">Nome</label>
+                    <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" placeholder="seuemail@exemplo.com" required>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="5" required></textarea>
+
+                    <button type="submit" class="botao primario">Enviar mensagem</button>
+                    <p id="mensagem-form" class="mensagem-form" role="status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="ano"></span> Elinaldo Costa. Projeto Front-End acadêmico.</p>
+        <a href="#inicio">Voltar ao topo ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
